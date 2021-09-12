@@ -1,0 +1,92 @@
+.submit {
+  background-color: $stone-white;
+
+  .user_form {
+    background-color: $stone-white;
+    min-height: 100vh;
+    height:100%;
+    padding: 20px;
+
+    .user_form_section {
+      margin: auto;
+      width: 44%;
+      display: flex;
+      flex-direction: column;
+
+      .user_title_section {
+        background-color: $white;
+        border-top: 8px solid $light-purple;
+        border-radius: 8px;
+        padding: 15px 25px;
+        text-transform: capitalize;
+
+        margin-bottom: 8px;
+      }
+
+      .user_form_questions {
+        background-color: $white;
+
+        border-radius: 8px;
+        padding: 30px 25px;
+        text-transform: capitalize;
+
+        margin-bottom: 8px;
+        .question_text {
+          font-size: 15px;
+          font-weight: 500;
+          letter-spacing: 0.1px;
+          line-height: 24px;
+          padding-bottom: 8px;
+        }
+        .option_text {
+          margin-bottom: 5px;
+          .option_text_inner {
+            display: flex;
+            .form-check-input {
+              margin: auto 5px;
+              &.text{
+                background: none;
+                width: 474px;
+                padding: 10px 0;
+                border: none;
+                border-bottom: 1px solid $light-grey;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .user_form_submit {
+      float: left;
+      button {
+        font-size: 14px;
+      }
+    }
+
+    .user_footer {
+      margin-bottom: 0;
+      text-align: center;
+      font-size: medium;
+      font-weight: 500;
+    }
+    .form_name {
+      font-size: 26px;
+    }
+    .form_desc {
+      font-size: 15px;
+    }
+    .response_text {
+      font-size: 13px;
+      font-weight: 400;
+    }
+    .submit_text {
+      border: none;
+      font-size: 13px;
+      text-decoration: underline;
+      color: $purple;
+      background: none;
+      outline: none;
+    }
+  }
+}
